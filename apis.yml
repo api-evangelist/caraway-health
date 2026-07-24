@@ -1,8 +1,24 @@
 aid: caraway-health
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/caraway-health.png
 name: Caraway Health *
-description: 'Caraway Health * is a company surfaced as a portfolio company of gv and added to the API
-  Evangelist network as a stub for enrichment. Sector: life-sciences. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Caraway Health is a digital health company that provides virtual mental and physical
+  healthcare designed for college and university students, delivered through a mobile app with support
+  offered around the clock. The company partners with higher-education institutions and is backed by
+  GV (Google Ventures). It operates as a direct-to-consumer / campus telehealth provider rather than
+  an API platform; at the time of this enrichment pass no public developer program, API reference, or
+  machine-readable specification was found on its public web surface. Sector: life-sciences / digital
+  health.'
 url: https://raw.githubusercontent.com/api-evangelist/caraway-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Life Sciences
+- Digital Health
+- Telehealth
+- Mental Health
+- Healthcare
+- Students
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/caraway-health-domain-security.yml
 - type: Website
-  url: https://www.summerhealth.com
+  url: https://caraway.health
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
